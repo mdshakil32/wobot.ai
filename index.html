@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wobot.ai</title>
+</head>
+<body>
+    <header>
+        <img src="assets/wobot-logo_blue 1.png" alt="">
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <div class="form-header">
+                <div class="form-logo">
+                    <img src="assets/Solid_lines.png" alt="">
+                </div>
+                <h1>It’s a delight to have you <br> onboard</h1>
+                <p>Help us know you better. <br>
+                (This is how we optimize Wobot as per your business needs)</p>
+            </div>
+            <div class="form-body">
+                <form>
+                    <div>
+                        <label for="example">Company name</label>
+                        <input id="companyName" required type="text" placeholder="e.g. Example Inc">
+                    </div>
+
+                    <div>
+                        <label for="dropdown">Industry</label>
+                        <select id="industry" name="cars" id="cars" required >
+                            <option value="select">Select</option>
+                            <option value="Option 1">Option 1</option>
+                            <option value="Option 2">Option 2</option>
+                            <option value="Option 3">Option 3</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="form-footer">
+                <div class="company-size">
+                    <p> Company Size</p>
+                    <ul>
+                        <li>1-20</li>
+                        <li>21-50</li>
+                        <li class="active">51-200</li>
+                        <li>201-500</li>
+                        <li>500+</li>
+                    </ul>
+                </div>
+                <div class="form-btn">
+                    <button onclick="getStarted() ">Get Started</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        Terms of use | Privacy policy
+    </footer>
+    
+    <script>
+        
+        function getStarted(){
+            let companyName = document.getElementById('companyName').value;
+            let industry = document.getElementById('industry').value;
+
+            if(companyName == '' && industry=="select" ){
+                alert('Please Fillup input field');
+            }
+            else{
+                document.getElementById('companyName').value='';
+                document.getElementById('industry').value='select'
+                confirm('Confirm to get Started')
+            }
+        }
+    </script>
+</body>
+</html>

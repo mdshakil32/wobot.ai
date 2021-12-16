@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-image: url("assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.form-wrapper {
+  width: 400px;
+  height: 611px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 90px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+/* form header  */
+.form-header {
+  text-align: center;
+}
+.form-header h1 {
+  font-size: 26px;
+  line-height: 30px;
+}
+.form-header p {
+  line-height: 18px;
+  color: #545454;
+  margin-bottom: 24px;
+  font-weight: 400 !important;
+}
+
+/* form body  */
+.form-body {
+  padding: 0 10px;
+}
+.form-body form label {
+  display: block;
+  margin-bottom: 8px;
+}
+.form-body form input,
+select {
+  padding: 10px 12px;
+  margin-bottom: 28px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  color: #a0a0a0;
+}
+.form-body form input {
+  width: 355px;
+}
+.form-body form select {
+  width: 381px;
+  background-color: white;
+}
+
+/* form-footer */
+.form-footer {
+  padding: 0 10px;
+}
+.company-size ul {
+  padding-left: 0;
+}
+
+.company-size ul li {
+  cursor: pointer;
+  display: inline;
+  background: #f0f0f0;
+  padding: 4px 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+.active {
+  background-color: #3766e8 !important;
+  color: white;
+}
+.company-size ul li:hover {
+  background-color: #3766e8;
+  color: white;
+}
+
+.form-btn button {
+  cursor: pointer;
+  background: #3766e8;
+  width: 383px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 46px;
+}
+
+/* footer  */
+footer {
+  text-align: center;
+  padding-top: 121px;
+}
+
+/* responsive media query  */
+@media only screen and (max-width: 460px) {
+  body {
+    padding: 40px 0;
+  }
+  .form-wrapper {
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+  .form-body form input {
+    /* width: 355px; */
+    width: 93%;
+  }
+  .form-body form select {
+    /* width: 381px; */
+    width: 100%;
+  }
+
+  .form-btn button {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 461px) and (max-width: 716px) {
+  body {
+    padding: 40px 0;
+  }
+  .form-wrapper {
+    padding-top: 20px 0;
+  }
+  header img {
+    margin-bottom: 20px;
+  }
+}
